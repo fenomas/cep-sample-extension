@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>myExtension</title>
+		<link rel="stylesheet" type="text/css" href="css/topcoat-desktop-dark.css" id="topcoat-style" >
+		<link rel="stylesheet" type="text/css" href="css/main-dark.css" id="main-style" >
+		<script src="js/CSInterface-4.0.0.js"></script>
+		<script src="js/Vulcan-5.0.0.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body onload="onLoaded()">
+
+		<h4>ハローワールド！</h4>
+
+		<p>
+			<button class="topcoat-button--large" onclick="docList()">
+				ファイル リスト
+			</button>
+
+			<button class="topcoat-button--large" onclick="openLink()">
+				外部リンクを開く
+			</button>
+		</p>
+
+		<p>
+			<button id="tool-button" class="topcoat-button--large">
+				JSX スクリプト実行
+			</button>
+		</p>
+
+		<strong>イベント発送</strong>
+		<p>
+			<button id="panel-event" onclick="panelEvent()" class="topcoat-button--large">
+				パネルVMから
+			</button>
+
+			<button id="tool-event" onclick="toolEvent()" class="topcoat-button--large">
+				ツールVMから
+			</button>
+		</p>
+		
+		<strong>ツール同士イベント</strong>
+		<p>
+			<button onclick="eventToPhotoshop()" class="topcoat-button--large">
+				Photoshopへ
+			</button>
+			<button onclick="eventToFlash()" class="topcoat-button--large">
+				Flashへ
+			</button>
+		</p>
+
+	</body>
+</html>
